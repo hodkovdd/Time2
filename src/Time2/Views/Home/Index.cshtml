@@ -1,0 +1,84 @@
+﻿<div class="container-fluid">
+    <div class="span3 col-lg-offset-6">done: @ViewBag.resultdate</div>
+    <h1>Форма ввода данных</h1>
+    <p></p>
+    <form method="post" class="form-horizontal" role="form">
+        <input type="hidden" value="@ViewBag.date" name="date" />
+        <div class="row">
+            <div class="col-sm-6" style="background-color:white" ;></div>
+            <div class="col-sm-6" style="background-color:white" ;><p class="text-right"><b>@DateTime.Now</b></p></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="background-color:white" ;>
+                <div class="form-group">
+                    <label for="User" class="col-md-3 control-label">Сколько мин.:</label>
+                    <div class="col-md-4">
+                        <input type="text" name="quantity" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="background-color:white" ;>
+                <div class="form-group">
+                    <label for="Name" class="col-md-2 control-label">На что:</label>
+                    <div class="col-md-4">
+                        <input type="text" name="Name" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="background-color:white" ;>
+                <div class="form-group">
+                    <label for="Name" class="col-md-3 control-label">Отступ:</label>
+                    <div class="col-md-4">
+                        <input type="text" name="Offset" class="form-control" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6" style="background-color:white" ;></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6" style="background-color:white" ;>
+                <p class="text-center"><input type="submit" class="btn btn-info" value="Отправить" /></p>
+</div>
+            <div class="col-sm-6" style="background-color:white" ;>
+                <p class="text-right"><a href="~/home/index" class="btn btn-info" role="button">Cancel</a></p>
+</div>
+        </div>
+    </form>
+</div>
+
+@*<div class="row">
+    <div class="span4" style="background-color:lavender">1111</div>
+    <div class="span3 col-lg-offset-6" style="background-color:lavender;">2222</div>
+</div>*@
+
+@*<h2>Форма оформления покупки</h2>
+
+<form method="post" class="form-horizontal" role="form">
+    <input type="hidden" value="@ViewBag.PhoneId" name="PhoneId" />
+    <p>Для оформления покупки заполните следующие поля:</p>
+    <div class="form-group">
+        <label for="User" class="col-md-2 control-label">Имя:</label>
+        <div class="col-md-4">
+            <input type="text" name="User" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Address" class="col-md-2 control-label">Адрес:</label>
+        <div class="col-md-4">
+            <input type="text" name="Address" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-2 control-label">Телефон:</label>
+        <div class="col-md-4">
+            <input type="text" name="ContactPhone" class="form-control" />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" class="btn btn-default" value="Отправить" />
+        </div>
+    </div>
+</form>*@
